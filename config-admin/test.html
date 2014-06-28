@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to config-admin</title>
+<link href="/css/screen.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Zookeeper Config Admin</h1>
+	<div>
+		<h2>
+			<a href="/logout">logout admin</a>
+		</h2>
+		<h2>Welcome to zk config server (10.1.11.214:2181), your role is:
+			dev,qa,product. Your allowed paths are:</h2>
+		<br>
+		<h3>
+			<ul class="paths">
+				<li><p>
+						<a href="#/trinity/config/his-web/dev">/trinity/config/his-web/dev</a>
+					</p></li>
+				<li><p>
+						<a href="#/trinity/config/his-web/qa">/trinity/config/his-web/qa</a>
+					</p></li>
+				<li><p>
+						<a href="#/trinity/config/his-web/product">/trinity/config/his-web/product</a>
+					</p></li>
+				<li><p>
+						<a href="#/trinity/config/his/dev">/trinity/config/his/dev</a>
+					</p></li>
+				<li><p>
+						<a href="#/trinity/config/his/qa">/trinity/config/his/qa</a>
+					</p></li>
+				<li><p>
+						<a href="#/trinity/config/his/product">/trinity/config/his/product</a>
+					</p></li>
+			</ul>
+		</h3>
+		<hr>
+		<h3>
+			Create a path:
+			<form action="/create" method="POST">
+				<p>Path:</p>
+				<textarea cols="80" id="path" name="path" rows="2"></textarea>
+				<p>Value:</p>
+				<textarea cols="80" id="value" name="value" rows="2"></textarea>
+				<br>
+				<input type="submit" value="create">
+			</form>
+			<hr>
+		</h3>
+		<h3>
+			Delete a path:
+			<form action="/delete" method="POST">
+				<p>Path:</p>
+				<textarea cols="80" id="path" name="path" rows="2"></textarea>
+				<br>
+				<input type="submit" value="delete">
+			</form>
+			<hr>
+		</h3>
+		<h3>
+			<ol class="dirs">
+				************** /trinity/config/his-web/dev ****************
+				<li><a name="/trinity/config/his-web/dev"><p>/trinity/config/his-web/dev</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev">
+						<textarea cols="80" id="value" name="value" rows="2">a</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9"><p>/trinity/config/his-web/dev/2.0.9</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9">
+						<textarea cols="80" id="value" name="value" rows="2">a</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_dispense_detail_filed"><p>/trinity/config/his-web/dev/2.0.9/his_dispense_detail_filed</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_dispense_detail_filed">
+						<textarea cols="80" id="value" name="value" rows="2">billNo,patientName,doctorName,medicineCode,medicineName,medicineSpec,medicineUnitName,medicineNum,medicinePrice,medicineCharge</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dss.connectapi.pushDataUrl"><p>/trinity/config/his-web/dev/2.0.9/dss.connectapi.pushDataUrl</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dss.connectapi.pushDataUrl">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.18.80:8080/dss-api/push/pushData</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.logger.com.tc.session"><p>/trinity/config/his-web/dev/2.0.9/log4j.logger.com.tc.session</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.logger.com.tc.session">
+						<textarea cols="80" id="value" name="value" rows="2">DEBUG,sessionlog</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.DailyRollingFileAppender</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/dubbo.his.group"><p>/trinity/config/his-web/dev/2.0.9/dubbo.his.group</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.his.group">
+						<textarea cols="80" id="value" name="value" rows="2">dev</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/tc.session.connection_timeout"><p>/trinity/config/his-web/dev/2.0.9/tc.session.connection_timeout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/tc.session.connection_timeout">
+						<textarea cols="80" id="value" name="value" rows="2">5</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/redis.pool.maxIdle"><p>/trinity/config/his-web/dev/2.0.9/redis.pool.maxIdle</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/redis.pool.maxIdle">
+						<textarea cols="80" id="value" name="value" rows="2">200</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/tc.session.timeout_check_interval"><p>/trinity/config/his-web/dev/2.0.9/tc.session.timeout_check_interval</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/tc.session.timeout_check_interval">
+						<textarea cols="80" id="value" name="value" rows="2">30</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dss.connectapi.getLastDateUrl"><p>/trinity/config/his-web/dev/2.0.9/dss.connectapi.getLastDateUrl</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dss.connectapi.getLastDateUrl">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.18.80:8080/dss-api/push/getLastestCheckDate</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/app.url.service"><p>/trinity/config/his-web/dev/2.0.9/app.url.service</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/app.url.service">
+						<textarea cols="80" id="value" name="value" rows="2">http://www.his.com:8080/tcgroup-his-web/j_spring_cas_security_check</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.append"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.append</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.append">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/tc.session.session_timeout"><p>/trinity/config/his-web/dev/2.0.9/tc.session.session_timeout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/tc.session.session_timeout">
+						<textarea cols="80" id="value" name="value" rows="2">30</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.file"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.file</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.file">
+						<textarea cols="80" id="value" name="value" rows="2">/tmp/operatelog-his-web.log</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.DailyRollingFileAppender</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/app.url.proxyreceptor"><p>/trinity/config/his-web/dev/2.0.9/app.url.proxyreceptor</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/app.url.proxyreceptor">
+						<textarea cols="80" id="value" name="value" rows="2">http://www.his.com:8080/tcgroup-his-web/j_spring_cas_security_proxyreceptor</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/show.stackTrace.in.error.page"><p>/trinity/config/his-web/dev/2.0.9/show.stackTrace.in.error.page</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/show.stackTrace.in.error.page">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/register.max.patient.count"><p>/trinity/config/his-web/dev/2.0.9/register.max.patient.count</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/register.max.patient.count">
+						<textarea cols="80" id="value" name="value" rows="2">30</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.ConsoleAppender</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_dispense_detail_title"><p>/trinity/config/his-web/dev/2.0.9/his_dispense_detail_title</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_dispense_detail_title">
+						<textarea cols="80" id="value" name="value" rows="2">\u53d1\u7968\u53f7,\u75c5\u4eba\u59d3\u540d,\u533b\u751f\u59d3\u540d,\u836f\u54c1\u7f16\u7801,\u836f\u54c1\u540d\u79f0,\u89c4\u683c,\u5355\u4f4d\u540d\u79f0,\u6570\u91cf,\u4ef7\u683c,\u91d1\u989d</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.crm.version"><p>/trinity/config/his-web/dev/2.0.9/dubbo.crm.version</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.crm.version">
+						<textarea cols="80" id="value" name="value" rows="2">2.0.1</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/redis.ip"><p>/trinity/config/his-web/dev/2.0.9/redis.ip</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/redis.ip">
+						<textarea cols="80" id="value" name="value" rows="2">10.1.10.232</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.layout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.file.layout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.layout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.PatternLayout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dss.connectapi.checkAndAutoStatisticDataUrl"><p>/trinity/config/his-web/dev/2.0.9/dss.connectapi.checkAndAutoStatisticDataUrl</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dss.connectapi.checkAndAutoStatisticDataUrl">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.18.80:8080/dss-api/push/checkData</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/dubbo.sso.group"><p>/trinity/config/his-web/dev/2.0.9/dubbo.sso.group</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.sso.group">
+						<textarea cols="80" id="value" name="value" rows="2">dev</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.his.version"><p>/trinity/config/his-web/dev/2.0.9/dubbo.his.version</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.his.version">
+						<textarea cols="80" id="value" name="value" rows="2">2.0.2</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/redis.pool.maxWait"><p>/trinity/config/his-web/dev/2.0.9/redis.pool.maxWait</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/redis.pool.maxWait">
+						<textarea cols="80" id="value" name="value" rows="2">1000</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.application.owner"><p>/trinity/config/his-web/dev/2.0.9/dubbo.application.owner</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.application.owner">
+						<textarea cols="80" id="value" name="value" rows="2"></textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.layout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.layout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.layout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.PatternLayout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.logger.operatelog"><p>/trinity/config/his-web/dev/2.0.9/log4j.logger.operatelog</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.logger.operatelog">
+						<textarea cols="80" id="value" name="value" rows="2">INFO,operatelog</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.layout.ConversionPattern"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.file.layout.ConversionPattern</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.layout.ConversionPattern">
+						<textarea cols="80" id="value" name="value" rows="2">%d{yyyy-MM-dd HH:mm:ss,SSS} - %5p - Uptime: [ %r ms ] - Msg: %m - Thread: [ %t ]%n</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.append"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.file.append</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.append">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/file.upload.default.encoding"><p>/trinity/config/his-web/dev/2.0.9/file.upload.default.encoding</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/file.upload.default.encoding">
+						<textarea cols="80" id="value" name="value" rows="2">UTF-8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.File"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.File</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.File">
+						<textarea cols="80" id="value" name="value" rows="2">/tmp/jamon-his-web.log</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/redis.pool.testOnBorrow"><p>/trinity/config/his-web/dev/2.0.9/redis.pool.testOnBorrow</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/redis.pool.testOnBorrow">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/upload.url"><p>/trinity/config/his-web/dev/2.0.9/upload.url</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/upload.url">
+						<textarea cols="80" id="value" name="value" rows="2">http://www.his.com:8080/tcgroup-his-web/</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/redis.pool.maxActive"><p>/trinity/config/his-web/dev/2.0.9/redis.pool.maxActive</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/redis.pool.maxActive">
+						<textarea cols="80" id="value" name="value" rows="2">1024</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.File"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.file.File</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.File">
+						<textarea cols="80" id="value" name="value" rows="2">/tmp/tcgroup-his-web.log</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.registry.timeout"><p>/trinity/config/his-web/dev/2.0.9/dubbo.registry.timeout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.registry.timeout">
+						<textarea cols="80" id="value" name="value" rows="2">20000</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.sso.version"><p>/trinity/config/his-web/dev/2.0.9/dubbo.sso.version</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.sso.version">
+						<textarea cols="80" id="value" name="value" rows="2">2.0.2</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.logger.hisWebSpringMonitor"><p>/trinity/config/his-web/dev/2.0.9/log4j.logger.hisWebSpringMonitor</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.logger.hisWebSpringMonitor">
+						<textarea cols="80" id="value" name="value" rows="2">TRACE,hisWebSpringMonitor</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.encoding"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.file.encoding</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.file.encoding">
+						<textarea cols="80" id="value" name="value" rows="2">UTF-8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/hisAdmin.ctx.url"><p>/trinity/config/his-web/dev/2.0.9/hisAdmin.ctx.url</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/hisAdmin.ctx.url">
+						<textarea cols="80" id="value" name="value" rows="2">http://www.his.com:8080/tcgroup-his-adminlog4j.rootCategory</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.DailyRollingFileAppender</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/static.resource.url.prefix"><p>/trinity/config/his-web/dev/2.0.9/static.resource.url.prefix</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/static.resource.url.prefix">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.10.66/projects/tccloud/HIS/2.0/RELEASE</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.file"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.file</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.file">
+						<textarea cols="80" id="value" name="value" rows="2">logs/hisWebSpringMonitor.log</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.application.name"><p>/trinity/config/his-web/dev/2.0.9/dubbo.application.name</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.application.name">
+						<textarea cols="80" id="value" name="value" rows="2">tcgroup-his-web</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_export_filepath"><p>/trinity/config/his-web/dev/2.0.9/his_export_filepath</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_export_filepath">
+						<textarea cols="80" id="value" name="value" rows="2">d:/his/export</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/cas.url"><p>/trinity/config/his-web/dev/2.0.9/cas.url</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/cas.url">
+						<textarea cols="80" id="value" name="value" rows="2">http://ssolocal.eyar.com</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.registry.address"><p>/trinity/config/his-web/dev/2.0.9/dubbo.registry.address</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.registry.address">
+						<textarea cols="80" id="value" name="value" rows="2">zookeeper://10.1.10.215:2181;zookeeper://10.1.10.216:2181;zookeeper://10.1.10.217:2181</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.logger.org.apache.zookeeper"><p>/trinity/config/his-web/dev/2.0.9/log4j.logger.org.apache.zookeeper</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.logger.org.apache.zookeeper">
+						<textarea cols="80" id="value" name="value" rows="2">INFO</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_dispense_export_filename"><p>/trinity/config/his-web/dev/2.0.9/his_dispense_export_filename</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_dispense_export_filename">
+						<textarea cols="80" id="value" name="value" rows="2">\u53d1\u836f</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.layout.conversionPattern"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.layout.conversionPattern</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.layout.conversionPattern">
+						<textarea cols="80" id="value" name="value" rows="2">%d{[dd.MM.yyyy] [HH:mm:ss]} %p [%t] %c (%F:%L) - %m%n</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.layout.conversionPattern"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.layout.conversionPattern</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.layout.conversionPattern">
+						<textarea cols="80" id="value" name="value" rows="2">%d{[dd.MM.yyyy] [HH:mm:ss]} %p [%t] %c (%F:%L) - %m%n</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/cas.url.login"><p>/trinity/config/his-web/dev/2.0.9/cas.url.login</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/cas.url.login">
+						<textarea cols="80" id="value" name="value" rows="2">http://ssolocal.eyar.com/login</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.protocol.port"><p>/trinity/config/his-web/dev/2.0.9/dubbo.protocol.port</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.protocol.port">
+						<textarea cols="80" id="value" name="value" rows="2">20881</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.encoding"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.encoding</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.encoding">
+						<textarea cols="80" id="value" name="value" rows="2">UTF-8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/dubbo.container"><p>/trinity/config/his-web/dev/2.0.9/dubbo.container</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.container">
+						<textarea cols="80" id="value" name="value" rows="2">spring</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout.layout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout.layout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout.layout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.PatternLayout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.file"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.file</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.file">
+						<textarea cols="80" id="value" name="value" rows="2">/tmp/tcsession-his-web.log</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/static.resource.url.version"><p>/trinity/config/his-web/dev/2.0.9/static.resource.url.version</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/static.resource.url.version">
+						<textarea cols="80" id="value" name="value" rows="2">2.0.2</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/jamon.outputTask.cron"><p>/trinity/config/his-web/dev/2.0.9/jamon.outputTask.cron</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/jamon.outputTask.cron">
+						<textarea cols="80" id="value" name="value" rows="2">0 0 * * * *</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his.searchEngine.url"><p>/trinity/config/his-web/dev/2.0.9/his.searchEngine.url</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his.searchEngine.url">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.10.82:8080/</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.layout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.layout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.layout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.PatternLayout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/scm.resource.url.prefix"><p>/trinity/config/his-web/dev/2.0.9/scm.resource.url.prefix</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/scm.resource.url.prefix">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.25.149:8080</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.append"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.append</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.hisWebSpringMonitor.append">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.encoding"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.encoding</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.encoding">
+						<textarea cols="80" id="value" name="value" rows="2">UTF-8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/tc.session.max_idle"><p>/trinity/config/his-web/dev/2.0.9/tc.session.max_idle</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/tc.session.max_idle">
+						<textarea cols="80" id="value" name="value" rows="2">8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his.enable.searchEngine"><p>/trinity/config/his-web/dev/2.0.9/his.enable.searchEngine</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his.enable.searchEngine">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.append"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.append</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.append">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.encoding"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.encoding</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.encoding">
+						<textarea cols="80" id="value" name="value" rows="2">UTF-8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.additivity.operatelog"><p>/trinity/config/his-web/dev/2.0.9/log4j.additivity.operatelog</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.additivity.operatelog">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.DailyRollingFileAppender</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/tc.session.servers"><p>/trinity/config/his-web/dev/2.0.9/tc.session.servers</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/tc.session.servers">
+						<textarea cols="80" id="value" name="value" rows="2">10.1.10.215</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/cas.url.logout"><p>/trinity/config/his-web/dev/2.0.9/cas.url.logout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/cas.url.logout">
+						<textarea cols="80" id="value" name="value" rows="2">http://ssolocal.eyar.com/logout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.protocol.name"><p>/trinity/config/his-web/dev/2.0.9/dubbo.protocol.name</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.protocol.name">
+						<textarea cols="80" id="value" name="value" rows="2">dubbo</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.layout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.layout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.layout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.PatternLayout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/dubbo.crm.group"><p>/trinity/config/his-web/dev/2.0.9/dubbo.crm.group</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.crm.group">
+						<textarea cols="80" id="value" name="value" rows="2">dev</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.additivity.hisWebSpringMonitor"><p>/trinity/config/his-web/dev/2.0.9/log4j.additivity.hisWebSpringMonitor</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.additivity.hisWebSpringMonitor">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/upload.real.root"><p>/trinity/config/his-web/dev/2.0.9/upload.real.root</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/upload.real.root">
+						<textarea cols="80" id="value" name="value" rows="2">/usr/local/tomcat/webapps/tcgroup-his-web/</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.logger.com.tc.his.task.OutputJamon"><p>/trinity/config/his-web/dev/2.0.9/log4j.logger.com.tc.his.task.OutputJamon</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.logger.com.tc.his.task.OutputJamon">
+						<textarea cols="80" id="value" name="value" rows="2">ALL,jamon</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.layout"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.layout</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.layout">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.PatternLayout</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/jamon.enable"><p>/trinity/config/his-web/dev/2.0.9/jamon.enable</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/jamon.enable">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.additivity.com.tc.session"><p>/trinity/config/his-web/dev/2.0.9/log4j.additivity.com.tc.session</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.additivity.com.tc.session">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout.layout.ConversionPattern"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout.layout.ConversionPattern</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.stdout.layout.ConversionPattern">
+						<textarea cols="80" id="value" name="value" rows="2">%d{yyyy-MM-dd HH:mm:ss,SSS} - %5p - Uptime: [ %r ms ] - Msg: %m - Location: [ %l ] - Thread: [ %t ]%n</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_dispense_filed"><p>/trinity/config/his-web/dev/2.0.9/his_dispense_filed</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_dispense_filed">
+						<textarea cols="80" id="value" name="value" rows="2">medicineCode,medicineName,medicineSpec,medicineUnitName,medicineNum,originMedicinePrice,medicineCharge</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his-web/dev/2.0.9/redis.port"><p>/trinity/config/his-web/dev/2.0.9/redis.port</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/redis.port">
+						<textarea cols="80" id="value" name="value" rows="2">6379</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dss.connectapi.getLastIdUrl"><p>/trinity/config/his-web/dev/2.0.9/dss.connectapi.getLastIdUrl</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dss.connectapi.getLastIdUrl">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.18.80:8080/dss-api/push/getLastestId</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.registry.check"><p>/trinity/config/his-web/dev/2.0.9/dubbo.registry.check</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.registry.check">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.layout.ConversionPattern"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.layout.ConversionPattern</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.layout.ConversionPattern">
+						<textarea cols="80" id="value" name="value" rows="2">%d{yyyy-MM-dd HH:mm:ss,SSS} - [%5p][%r ms][ %t ][ %l ]- Msg: %m%n</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.consumer.check"><p>/trinity/config/his-web/dev/2.0.9/dubbo.consumer.check</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.consumer.check">
+						<textarea cols="80" id="value" name="value" rows="2">false</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_dispense_title"><p>/trinity/config/his-web/dev/2.0.9/his_dispense_title</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_dispense_title">
+						<textarea cols="80" id="value" name="value" rows="2">\u836f\u54c1\u7f16\u7801,\u836f\u54c1\u540d\u79f0,\u836f\u54c1\u89c4\u683c,\u5355\u4f4d,\u6570\u91cf,\u539f\u4ef7\u683c,\u91d1\u989d</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.layout.conversionPattern"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.layout.conversionPattern</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.sessionlog.layout.conversionPattern">
+						<textarea cols="80" id="value" name="value" rows="2">%d{[dd.MM.yyyy] [HH:mm:ss]} %p [%t] %c (%F:%L) - %m%n</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/cache.default.ttl"><p>/trinity/config/his-web/dev/2.0.9/cache.default.ttl</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/cache.default.ttl">
+						<textarea cols="80" id="value" name="value" rows="2">3600</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/dubbo.monitor.protocol"><p>/trinity/config/his-web/dev/2.0.9/dubbo.monitor.protocol</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/dubbo.monitor.protocol">
+						<textarea cols="80" id="value" name="value" rows="2">registry</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/crm.resource.url.prefix"><p>/trinity/config/his-web/dev/2.0.9/crm.resource.url.prefix</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/crm.resource.url.prefix">
+						<textarea cols="80" id="value" name="value" rows="2">http://10.1.25.147/tcgroup-crm-web/</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.append"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.append</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.jamon.append">
+						<textarea cols="80" id="value" name="value" rows="2">true</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_export_filepostfix"><p>/trinity/config/his-web/dev/2.0.9/his_export_filepostfix</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_export_filepostfix">
+						<textarea cols="80" id="value" name="value" rows="2">.xls</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.encoding"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.encoding</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.operatelog.encoding">
+						<textarea cols="80" id="value" name="value" rows="2">UTF-8</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/his_dispense_detail_export_filename"><p>/trinity/config/his-web/dev/2.0.9/his_dispense_detail_export_filename</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/his_dispense_detail_export_filename">
+						<textarea cols="80" id="value" name="value" rows="2">\u53d1\u836f\u660e\u7ec6</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/log4j.appender.file"><p>/trinity/config/his-web/dev/2.0.9/log4j.appender.file</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/log4j.appender.file">
+						<textarea cols="80" id="value" name="value" rows="2">org.apache.log4j.DailyRollingFileAppender</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his-web/dev/2.0.9/tc.session.init_idle_capacity"><p>/trinity/config/his-web/dev/2.0.9/tc.session.init_idle_capacity</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/dev/2.0.9/tc.session.init_idle_capacity">
+						<textarea cols="80" id="value" name="value" rows="2">4</textarea>
+						<input type="submit" value="update">
+					</form></li>
+			</ol>
+		</h3>
+		<h3>
+			<ol class="dirs">
+				************** /trinity/config/his-web/qa ****************
+				<li><a name="/trinity/config/his-web/qa"><p>/trinity/config/his-web/qa</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/qa">
+						<textarea cols="80" id="value" name="value" rows="2">12345</textarea>
+						<input type="submit" value="update">
+					</form></li>
+			</ol>
+		</h3>
+		<h3>
+			<ol class="dirs">
+				************** /trinity/config/his-web/product ****************
+				<li><a name="/trinity/config/his-web/product"><p>/trinity/config/his-web/product</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his-web/product">
+						<textarea cols="80" id="value" name="value" rows="2">12345</textarea>
+						<input type="submit" value="update">
+					</form></li>
+			</ol>
+		</h3>
+		<h3>
+			<ol class="dirs">
+				************** /trinity/config/his/dev ****************
+				<li><a name="/trinity/config/his/dev"><p>/trinity/config/his/dev</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev">
+						<textarea cols="80" id="value" name="value" rows="2"></textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a name="/trinity/config/his/dev/2.0.9"><p>/trinity/config/his/dev/2.0.9</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9">
+						<textarea cols="80" id="value" name="value" rows="2"></textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/spring.config.for.action"><p>/trinity/config/his/dev/2.0.9/spring.config.for.action</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/spring.config.for.action">
+						<textarea cols="80" id="value" name="value" rows="2">property_for_action_fromZK</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/spring.config.for.action_dynamic"><p>/trinity/config/his/dev/2.0.9/spring.config.for.action_dynamic</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/spring.config.for.action_dynamic">
+						<textarea cols="80" id="value" name="value" rows="2">property_for_action_fromZK_gaofeng</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/spring.config.for.jsp_dynamic"><p>/trinity/config/his/dev/2.0.9/spring.config.for.jsp_dynamic</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/spring.config.for.jsp_dynamic">
+						<textarea cols="80" id="value" name="value" rows="2">property_for_jsp_fromZK_k2</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/spring.config.for.xml_dynamic"><p>/trinity/config/his/dev/2.0.9/spring.config.for.xml_dynamic</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/spring.config.for.xml_dynamic">
+						<textarea cols="80" id="value" name="value" rows="2">property_for_xml_fromZK_k1</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/spring.config.for.xml"><p>/trinity/config/his/dev/2.0.9/spring.config.for.xml</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/spring.config.for.xml">
+						<textarea cols="80" id="value" name="value" rows="2">property_for_xml_fromZK</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/logback.root.loggingLevel_dynamic"><p>/trinity/config/his/dev/2.0.9/logback.root.loggingLevel_dynamic</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/logback.root.loggingLevel_dynamic">
+						<textarea cols="80" id="value" name="value" rows="2">info</textarea>
+						<input type="submit" value="update">
+					</form></li>
+				<li><a
+					name="/trinity/config/his/dev/2.0.9/spring.config.for.jsp"><p>/trinity/config/his/dev/2.0.9/spring.config.for.jsp</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/dev/2.0.9/spring.config.for.jsp">
+						<textarea cols="80" id="value" name="value" rows="2">property_for_jsp_fromZK</textarea>
+						<input type="submit" value="update">
+					</form></li>
+			</ol>
+		</h3>
+		<h3>
+			<ol class="dirs">
+				************** /trinity/config/his/qa ****************
+				<li><a name="/trinity/config/his/qa"><p>/trinity/config/his/qa</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/qa">
+						<textarea cols="80" id="value" name="value" rows="2">2345</textarea>
+						<input type="submit" value="update">
+					</form></li>
+			</ol>
+		</h3>
+		<h3>
+			<ol class="dirs">
+				************** /trinity/config/his/product ****************
+				<li><a name="/trinity/config/his/product"><p>/trinity/config/his/product</p></a>
+				<form action="/update" method="POST">
+						<input id="path" name="path" type="hidden"
+							value="/trinity/config/his/product">
+						<textarea cols="80" id="value" name="value" rows="2">1234</textarea>
+						<input type="submit" value="update">
+					</form></li>
+			</ol>
+		</h3>
+	</div>
+</body>
+</html>
